@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Editable Resume Builder</h1>
+    <form id="Resume Form">
+        <fieldset>
+            <legend>Personal Information</legend>
+        
+        <label for="name">First Name:</label>
+        <input type="text" id="name" placeholder="Enter Your First Name" required>
+        <label for="name">Last Name:</label>
+        <input type="text" id="Last Name" placeholder="Enter Your Last Name" required>
+        <label for="Phone Number">Phone Number:</label>
+        <input type="tel" id="Phone Number" placeholder="Enter Phone Number" required >
+        <label for="Email">Email:</label>
+        <input type="text" id="Email" placeholder="Enter Your Email address" required>
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="Education">Education</label>
+            <textarea name="textarea" id="Education" placeholder="Enter Your Education Here" rows="2" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="Experience"></label>
+            <textarea name="Experience" id="Experience" placeholder="Enter Your Experience Here" rows="8" aria-placeholder=""></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skill</legend>
+            <label for="Skill"></label>
+            <textarea name="Skill" id="Skill" placeholder="Enter Your Skill Here" rows="8" aria-placeholder=""></textarea>
+        </fieldset>
+        <button type="submit"><b>Generate Resume</b></button>
+    </form>
+    
+    <br>
+
+    <!--Dynamic and Editable Resume-->
+    <div id="Resume Display" contenteditable="true">
+        <!--Resume will be generated Below-->
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
